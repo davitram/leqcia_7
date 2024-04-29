@@ -25,21 +25,21 @@ body, html {
 .ship {
     width: 200px;
     height: 100px;
-    background-image: url('ship-transparent-background-7.jpg'); 
+    background-image: url('ship-transparent-background-7-removebg-preview.png'); 
     background-size: contain;
     position: absolute;
-    bottom: 0;
+    bottom: 100px;
     left: -20px;
-    animation: cruise 10s linear infinite;
-    animation-duration: 10s;
+    animation: cruise 20s linear infinite;
+    background-repeat: no-repeat;
 }
 
 @keyframes cruise {
     0% {
-        transform: translateX(-50%);
+        left: 0%;
     }
     100% {
-        transform: translateX(110%);
+        left: 100%;
     }
 }
 
@@ -51,14 +51,15 @@ body, html {
     position: absolute;
     top: 100px;
     left: -20px;
-    animation: fly 6s linear infinite;
+    animation: fly 15s linear infinite;
+    background-repeat: no-repeat;
 }
 
 @keyframes fly {
     0% {
-        transform: translateX(-50%);
+        left: 0%;
     }
     100% {
-        transform: translateX(110%);
+        left: 100%;
     }
 }
